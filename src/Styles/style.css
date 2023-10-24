@@ -1,0 +1,195 @@
+.parent-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container h1 {
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  margin: 50px 0px;
+}
+.form-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 1000px;
+  height: 200px;
+  position: relative;
+  padding: 20px;
+  gap: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: x-large;
+}
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-top: 20px;
+  background-color: lightgray;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+button {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+.form-container .search {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+}
+.form-container .price {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  width: 300px;
+  height: 100px;
+  background-color: inherit;
+}
+.form-container .add-button {
+  flex: 1;
+  position: relative;
+  top: 50px;
+  width: 100px;
+  height: 50px;
+}
+
+.carlist-container {
+  width: 1000px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.carlist-container .list-container {
+  flex: 5;
+}
+
+.carlist-container .list-container h3 {
+  font-size: x-large;
+}
+
+.carlist-container .list-container .cars {
+  font-size: large;
+}
+
+.carlist-container .list-container .total {
+  display: flex;
+  font-size: large;
+  font-weight: bold;
+}
+.carlist-container .list-container .total p {
+  flex: 1;
+}
+
+.carlist-container .list-container .total p:nth-child(2) {
+  position: relative;
+  left: -40px;
+}
+table {
+  width: 100%;
+}
+
+thead,
+tbody {
+  text-align: left;
+}
+
+tbody tr {
+  height: 50px;
+  border-bottom: 10px solid black;
+}
+
+tr td {
+  width: 45%;
+}
+
+tr td:last-child {
+  width: 10%;
+  /* background-color: aliceblue; */
+}
+
+tr td:last-child p {
+  width: 10%;
+  height: 10%;
+  position: relative;
+}
+tr > td:last-child p::before {
+  content: "";
+  border-bottom: 1px solid black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: 12px;
+  transform: rotate(45deg);
+  /* transition: 0.5s; */
+}
+tr > td:last-child p::after {
+  content: "";
+  border-bottom: 1px solid black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -2px;
+  transform: rotate(-45deg);
+  /* transition: 0.5s; */
+}
+
+/* tr:hover > td:last-child p::before {
+  content: "";
+  border-bottom: 1px solid black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: 12px;
+  transform: rotate(405deg);
+}
+tr:hover > td:last-child p::after {
+  content: "";
+  border-bottom: 1px solid black;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -2px;
+  transform: rotate(315deg);
+} */
+
+.carlist-container .search-car {
+  flex: 1;
+  height: 50px;
+}
+
+.bold{
+  font-weight: bold;
+}
